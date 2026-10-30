@@ -1,3 +1,16 @@
-# Python Prototype
-An unfinished attempt at making a game in python without using pygame, instead opting for Pyside6.
-Made with QT Widgets Designer
+# PySide Text Explorer (work in progress)
+A desktop text-based RPG built with Python and PySide6.
+
+## Current status
+- Main window and interface built with Qt Designer
+- Working save manager 
+- Half working map system
+
+## Planned
+- Exploration, combat, and inventory
+
+## Run it
+python -m venv .venv
+source .venv/bin/activate
+pip install -r PySide6
+python main.py
