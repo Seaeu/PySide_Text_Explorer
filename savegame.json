@@ -1,0 +1,122 @@
+{
+    "options": {
+        "text_speed": 3
+    },
+    "inventory": {
+        "Small Potion": 3
+    },
+    "equipment": {
+        "Head": {
+            "equipped": false,
+            "item": null
+        },
+        "Chest": {
+            "equipped": false,
+            "item": null
+        },
+        "Legs": {
+            "equipped": false,
+            "item": null
+        },
+        "Feet": {
+            "equipped": false,
+            "item": null
+        },
+        "Weapon": {
+            "equipped": false,
+            "item": null
+        },
+        "Secondary": {
+            "equipped": false,
+            "item": null
+        }
+    },
+    "player_stats": {
+        "ID": "Player",
+        "M_HP": 100,
+        "C_HP": 100,
+        "ATK": 12,
+        "ACC": 0.75,
+        "CRT": 0.2,
+        "BLK": 0.4,
+        "SPD": 6,
+        "GOLD": 0
+    },
+    "game_stage": 0,
+    "world_status": {
+        "zone_0": {
+            "world_name": "World Map",
+            "nodes": [
+                {
+                    "name": "Tranquil Forest",
+                    "x": 0,
+                    "y": 250,
+                    "radius": 50,
+                    "callback": "emit_signal",
+                    "visible": true
+                },
+                {
+                    "name": "WIP",
+                    "x": 0,
+                    "y": 100,
+                    "radius": 50,
+                    "callback": null,
+                    "visible": true
+                }
+            ],
+            "connections": [
+                {
+                    "source": "Tranquil Forest",
+                    "dest": "WIP"
+                }
+            ]
+        },
+        "zone_1": {
+            "world_name": "Tranquil Forest",
+            "nodes": [
+                {
+                    "name": "Temp",
+                    "x": 0,
+                    "y": -75,
+                    "radius": null,
+                    "callback": null,
+                    "visible": true
+                },
+                {
+                    "name": "Village",
+                    "x": 0,
+                    "y": -50,
+                    "radius": null,
+                    "callback": null,
+                    "visible": true
+                },
+                {
+                    "name": "Shop",
+                    "x": -100,
+                    "y": -50,
+                    "radius": null,
+                    "callback": null,
+                    "visible": true
+                },
+                {
+                    "name": "Battle",
+                    "x": 100,
+                    "y": 50,
+                    "radius": null,
+                    "callback": null,
+                    "visible": true
+                }
+            ],
+            "connections": [
+                {
+                    "source": "Temp",
+                    "dest": "Shop"
+                },
+                {
+                    "source": "Temp",
+                    "dest": "Battle"
+                }
+            ]
+        }
+    }
+}

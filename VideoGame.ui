@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QDialog" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Game Window</string>
+  </property>
+  <property name="windowOpacity">
+   <double>-4.000000000000000</double>
+  </property>
+  <property name="toolTipDuration">
+   <number>-6</number>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QStackedWidget" name="Tabs">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="MainMenu">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="Game_Label">
+         <property name="font">
+          <font>
+           <family>Fira Sans Condensed SemiBold</family>
+           <pointsize>32</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Py Explorer</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+         </property>
+         <property name="margin">
+          <number>40</number>
+         </property>
+         <property name="indent">
+          <number>-1</number>
+         </property>
+         <property name="openExternalLinks">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="NewGame">
+         <property name="font">
+          <font>
+           <family>Fira Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>New Game</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="LoadGame">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Fira Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Load Game</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Options">
+         <property name="font">
+          <font>
+           <family>Fira Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Options</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Quit">
+         <property name="font">
+          <font>
+           <family>Fira Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Quit</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="Empty">
+         <property name="font">
+          <font>
+           <pointsize>32</pointsize>
+          </font>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>150</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="DevBtn">
+         <property name="text">
+          <string>Test Button</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="OptionsMenu">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="Menu_Title">
+         <item>
+          <widget class="QLabel" name="Options_Label">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Fira Sans</family>
+             <pointsize>24</pointsize>
+             <bold>true</bold>
+             <kerning>false</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string>Options Menu</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="Settings">
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="TextSpeed_SpinBox">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::UpDownArrows</enum>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="TextSpeed_Label">
+           <property name="text">
+            <string>Text Speed:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="LeaveOptions">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Fira Sans</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Save and Exit</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="Empty_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="GamePlay">
+      <widget class="QTextBrowser" name="TextLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>271</y>
+         <width>591</width>
+         <height>251</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SaveAndQuit">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>220</y>
+         <width>226</width>
+         <height>46</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Return to Main Menu</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="InventoryBtn">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>528</y>
+         <width>180</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Inventory</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="MapMenuButton">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>528</y>
+         <width>180</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Map</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="idfk">
+       <property name="geometry">
+        <rect>
+         <x>214</x>
+         <y>528</y>
+         <width>150</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>idk</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Inventory" name="Inventory"/>
+     <widget class="MapView" name="Map">
+      <widget class="MapLabel" name="MapLabel">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>590</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LayoutDirection::LeftToRight</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MapView</class>
+   <extends>QWidget</extends>
+   <header>mapview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Inventory</class>
+   <extends>QWidget</extends>
+   <header>inventory.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MapLabel</class>
+   <extends>QLabel</extends>
+   <header>mapview.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>Quit</tabstop>
+  <tabstop>LoadGame</tabstop>
+  <tabstop>Options</tabstop>
+  <tabstop>NewGame</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
